@@ -1,0 +1,24 @@
+﻿<Window x:Class="FlappyBird.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlappyBird"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="alaphattr" Source="/forest.png" Grid.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill"/>
+        <Image x:Name="alaphar" Source="/fogforest.png" Grid.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill" Visibility="Hidden"/>
+        <Canvas Name="GameCanvas">
+            <Rectangle Name="Bird" Width="30" Height="30" Fill="Red" Canvas.Left="100" Canvas.Top="200" Canvas.ZIndex="2"/>
+            <Rectangle Name="PipeTop" Width="50" Height="200" Fill="Gray" Canvas.Left="400" Canvas.Top="0" Canvas.ZIndex="2"/>
+            <Rectangle Name="PipeBottom" Width="50" Height="200" Fill="Gray" Canvas.Left="400" Canvas.Top="300" Canvas.ZIndex="2"/>
+        </Canvas>
+    </Grid>
+</Window>
