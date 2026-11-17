@@ -5,20 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FlappyBird"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="490" Width="800"
+        ResizeMode="NoResize">
+    
+    
 
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+    <Canvas Name="GameCanvas" Focusable="True" KeyDown="jump" KeyUp="jumpEnd">
+        <Image x:Name="bgNormal" Source="/Images/forest.png" Panel.ZIndex="-1" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="UniformToFill" Width="820" Canvas.Left="-10" Canvas.Top="-58"/>
+        <Image x:Name="bgFoggy" Source="/Images/fogforest.png" Panel.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill" Visibility="Hidden"/>
 
-        <Image x:Name="alaphattr" Source="/forest.png" Grid.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill"/>
-        <Image x:Name="alaphar" Source="/fogforest.png" Grid.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill" Visibility="Hidden"/>
-        <Canvas Name="GameCanvas">
-            <Rectangle Name="Bird" Width="30" Height="30" Fill="Red" Canvas.Left="100" Canvas.Top="200" Canvas.ZIndex="2"/>
-            <Rectangle Name="PipeTop" Width="50" Height="200" Fill="Gray" Canvas.Left="400" Canvas.Top="0" Canvas.ZIndex="2"/>
-            <Rectangle Name="PipeBottom" Width="50" Height="200" Fill="Gray" Canvas.Left="400" Canvas.Top="300" Canvas.ZIndex="2"/>
-        </Canvas>
-    </Grid>
+        <Image x:Name="trunkTop" Tag="trunk" Source="/Images/trunktrans.png" Canvas.Left="208" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Image x:Name="trunkBottom" Tag="trunk"  Source="/Images/trunktrans.png" Canvas.Left="207" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Image x:Name="trunkTop2" Tag="trunk" Source="/Images/trunktrans.png" Canvas.Left="444" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkBottom2" Tag="trunk" Source="/Images/trunktrans.png" Canvas.Left="443" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkTop3" Tag="trunk" Source="/Images/trunktrans.png" Canvas.Left="638" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkBottom3"  Source="/Images/trunktrans.png" Canvas.Left="638" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <Image Name="birb" Source="/Images/flappyBird.png" Width="76" Height="55" Canvas.Left="69" Canvas.Top="214" Panel.ZIndex="2"/>
+    </Canvas>
 </Window>

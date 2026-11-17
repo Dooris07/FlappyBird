@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net10.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
@@ -10,12 +10,20 @@
 
   <ItemGroup>
     <None Remove="forest.png" />
+    <None Remove="Images\flappyBird.png" />
+    <None Remove="Images\fogforest.png" />
+    <None Remove="Images\trunktrans.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="forest.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Resource Include="Images\flappyBird.png" />
+    <Resource Include="Images\fogforest.png" />
+    <Resource Include="Images\forest.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\trunktrans.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
