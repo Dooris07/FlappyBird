@@ -15,12 +15,12 @@
         <Image x:Name="bgNormal" Source="/Images/forest.png" Panel.ZIndex="-1" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="UniformToFill" Width="820" Canvas.Left="-10" Canvas.Top="-58"/>
         <Image x:Name="bgFoggy" Source="/Images/fogforest.png" Panel.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill" Visibility="Hidden"/>
 
-        <Image x:Name="trunkTop" Tag="trunk" Source="/Images/trunktrans.png" Canvas.Left="208" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Image x:Name="trunkBottom" Tag="trunk"  Source="/Images/trunktrans.png" Canvas.Left="207" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Image x:Name="trunkTop2" Tag="trunk" Source="/Images/trunktrans.png" Canvas.Left="444" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Image x:Name="trunkBottom2" Tag="trunk" Source="/Images/trunktrans.png" Canvas.Left="443" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Image x:Name="trunkTop3" Tag="trunk" Source="/Images/trunktrans.png" Canvas.Left="638" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
-        <Image x:Name="trunkBottom3"  Source="/Images/trunktrans.png" Canvas.Left="638" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Image x:Name="trunkTop" Tag="trunk1" Source="/Images/trunktrans.png" Canvas.Left="208" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Image x:Name="trunkBottom" Tag="trunk1"  Source="/Images/trunktrans.png" Canvas.Left="207" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Image x:Name="trunkTop2" Tag="trunk2" Source="/Images/trunktrans.png" Canvas.Left="444" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkBottom2" Tag="trunk2" Source="/Images/trunktrans.png" Canvas.Left="443" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkTop3" Tag="trunk3" Source="/Images/trunktrans.png" Canvas.Left="638" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkBottom3" Tag="trunk3"  Source="/Images/trunktrans.png" Canvas.Left="638" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" />
 
         <Image Name="birb" Source="/Images/flappyBird.png" Width="76" Height="55" Canvas.Left="69" Canvas.Top="214" Panel.ZIndex="2"/>
     </Canvas>
