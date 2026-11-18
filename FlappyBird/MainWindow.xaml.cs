@@ -24,8 +24,9 @@ namespace FlappyBird
             GameCanvas.Focus();
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromMilliseconds(20);
-            timer.Tick += Haladas;
             Start();
+            timer.Tick += Haladas;
+            
             
         }
 
@@ -75,13 +76,13 @@ namespace FlappyBird
         {
             foreach (var item in GameCanvas.Children)
             {
-                if (item is Image && (string)(item as Image).Tag == "trunk1" && (string)(item as Image).Tag == "trunk2" && (string)(item as Image).Tag == "trunk3")
+                if (item is Image && (string)(item as Image).Tag == "trunk1" || (string)(item as Image).Tag == "trunk2" || (string)(item as Image).Tag == "trunk3")
                 {
                     Image trunk = item as Image;
                     double pos = Canvas.GetLeft(trunk);
-                    if (pos < -100)
+                    if (pos < -155)
                     {
-                        Canvas.SetLeft(trunk, 800);
+                        Canvas.SetLeft(trunk, 1600);
                     }
                     else
                     {
@@ -110,11 +111,11 @@ namespace FlappyBird
                         Canvas.SetLeft(trunk, 1600);
                         break;
                 }
-                timer.Start();
+                
             }
-
+            timer.Start();
         }
-
+       
 
     }
 }
