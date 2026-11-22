@@ -26,8 +26,7 @@ namespace FlappyBird
         {
             Window jatek = new MainWindow();
             jatek.Show();
-            this.Hide();
-            //this.Close();
+            this.Close();
         }
     }
 }

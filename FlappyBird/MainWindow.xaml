@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="490" Width="800"
         ResizeMode="NoResize">
-    
-    
 
 
-    <Canvas Name="GameCanvas" Focusable="True" KeyDown="jump" KeyUp="jumpEnd">
-        <Image x:Name="bgNormal" Source="/Images/forest.png" Panel.ZIndex="-1" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="UniformToFill" Width="820" Canvas.Left="-10" Canvas.Top="-58"/>
-        <Image x:Name="bgFoggy" Source="/Images/fogforest.png" Panel.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill" Visibility="Hidden"/>
+
+
+    <Canvas Name="GameCanvas" Focusable="True" KeyDown="jump">
+        <Image x:Name="bgNormal" Tag="normal" Source="/Images/forest.png" Panel.ZIndex="-1" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="UniformToFill" Width="820" Canvas.Left="-10" Canvas.Top="-58"/>
+        <Image x:Name="bgFoggy" Tag="foggy" Source="/Images/fogforest.png" Panel.ZIndex="-1" HorizontalAlignment="Center" VerticalAlignment="Top" Stretch="UniformToFill" Visibility="Hidden"/>
 
         <Image x:Name="trunkTop" Tag="trunk1" Source="/Images/trunktrans.png" Canvas.Left="208" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Image x:Name="trunkBottom" Tag="trunk1"  Source="/Images/trunktrans.png" Canvas.Left="207" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Center" VerticalAlignment="Top" />
@@ -22,6 +22,10 @@
         <Image x:Name="trunkTop3" Tag="trunk3" Source="/Images/trunktrans.png" Canvas.Left="638" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <Image x:Name="trunkBottom3" Tag="trunk3"  Source="/Images/trunktrans.png" Canvas.Left="638" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Top" />
 
-        <Image Name="birb" Source="/Images/flappyBird.png" Width="76" Height="55" Canvas.Left="69" Canvas.Top="214" Panel.ZIndex="2"/>
+        <Image Name="birb" Tag="birb" Source="/Images/flappyBird.png" Width="43" Height="29" Canvas.Left="69" Canvas.Top="214" Panel.ZIndex="2"/>
+        <Image x:Name="trunkTop4" Tag="trunk4" Source="/Images/trunktrans.png" Canvas.Left="847" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkBottom4" Tag="trunk4"  Source="/Images/trunktrans.png" Canvas.Left="847" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkTop4_Copy" Tag="trunk5" Source="/Images/trunktrans.png" Canvas.Left="1084" Canvas.Top="-276" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Image x:Name="trunkBottom4_Copy" Tag="trunk5"  Source="/Images/trunktrans.png" Canvas.Left="1084" Canvas.Top="320" Height="445" Width="155" HorizontalAlignment="Left" VerticalAlignment="Center" />
     </Canvas>
 </Window>
