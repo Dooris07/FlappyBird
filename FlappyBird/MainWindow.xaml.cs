@@ -55,13 +55,13 @@ namespace FlappyBird
 
         private void HitboxCheck()
         {
-            Rect birbHitbox = new Rect(Canvas.GetLeft(birb) + 5, Canvas.GetTop(birb) + 5, birb.ActualWidth, birb.ActualHeight - 10);
+            Rect birbHitbox = new Rect(Canvas.GetLeft(birb) + 5, Canvas.GetTop(birb) + 10, birb.ActualWidth, birb.ActualHeight - 10);
 
             foreach (Image item in GameCanvas.Children.OfType<Image>())
             {
                 if (!except.Contains(item.Tag))
                 {
-                    Rect trunkHitbox = new Rect(Canvas.GetLeft(item) + 50, Canvas.GetTop(item), item.ActualWidth, item.ActualHeight);
+                    Rect trunkHitbox = new Rect(Canvas.GetLeft(item) + 50, Canvas.GetTop(item), item.ActualWidth - 70, item.ActualHeight);
                     if (trunkHitbox.IntersectsWith(birbHitbox))
                     {
                         MessageBox.Show("Game over");
